@@ -28,12 +28,12 @@
 
 <!--=============================jquery.js==============================-->
 
-<script src="js/jquery-1.10.2.min.js" type="text/javascript"></script>
+<script src="http://code.jquery.com/jquery-2.0.2.min.js"></script>
+  <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+<script src="https://e-timer.ru/js/etimer.js"></script>
 
 <!--============================= login-popup ==============================-->
 
-<script type="text/javascript" src="js/jquery.leanModal.min.js"></script>
-<link type="text/css" rel="stylesheet" href="css/login-popup.css" />
 
 <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
 <!--[if lt IE 9]><script src="js/ie8-responsive-file-warning.js"></script><![endif]-->
@@ -101,11 +101,25 @@
               <div class="carousel-caption">
                 <p class="main-image"><img src="images/logo1.png" alt="" /></p>
                 <div class="head-space">
-                  <h1><a href="#">ЛЕБЕДКА для УАЗ ПАТРИОТ</a></h1>
+                  <h1><a href="#">Автомобильная лебедка для УАЗ ПАТРИОТ</a></h1>
                 </div>
                 <h2>от Российского производителя</h2>
                 <p class="banner-text">Автомобильные лебедки Спрут Спорт учтены в конструкции автомобилей УАЗ Патриот и не требуют регистрации в ГИБДД </p>
+                <div class="price1"><h1><a href="#">43 000 &#8381;</a></h1></div>
                 <p><a class="blue-button wobble-horizontal" href="#" role="button">КУПИТЬ</a> </p>
+                <!-- Trigger/Open The Modal -->
+<button id="myBtn">Open Modal</button>
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <p>Some text in the Modal..</p>
+  </div>
+
+</div>
               </div>
             </div>
           </div>
@@ -114,7 +128,7 @@
               <div class="carousel-caption">
                 <div class="banner-inner-container">
                   <div class="head-space">
-                    <h1><a href="#">Автомобильная лебедка без регистрации в ГИБДД</a></h1>
+                    <h1><a href="#">Лебедка без регистрации в ГИБДД</a></h1>
                   </div>
                   <h2>Устанавливается на конвейере УАЗ</h2>
                   <p class="banner-text1">Лебедки Спрут сертифицированы для ГАИ и устанавливаются на автомобилях УАЗ прямо на конвейере. </p>
@@ -130,6 +144,7 @@
                       </div>
                     </div>
                   </div>
+                  <div class="price1"><h1><a href="#">43 000 &#8381;</a></h1></div>
                   <p><a class="blue-button wobble-horizontal" href="#" role="button">КУПИТЬ</a></p>
                 </div>
               </div>
@@ -147,17 +162,19 @@
                   <div class="row featurette">
                     <div class="col-md-4 banner-icon hidden-xs hidden-sm"> <img src="images/logo1.png" alt="" /> </div>
                     <div class="col-md-8">
-                      <div class="banner-nav">
-                        <ul>
-                          <li> Наши лебедки служат по 10 лет.</li>
-                          <li> Мы регулярно испытываем наши лебедки на боевых экипажах в Трофи-Рейдах</li>
-                          <li> Собственная производственная база.</li>
-                          <li> Гарантия качества</li>
-                        </ul>
+                      <div>
+                        <script type="text/javascript">
+	                       jQuery(document).ready(function() {
+		                         jQuery(".eTimer").eTimer({
+			                            etType: 0, etDate: "01.03.2020.0.0", etTitleText: "Успей купить!", etTitleSize: 20, etShowSign: 1, etSep: ":", etFontFamily: "Trebuchet MS", etTextColor: "white", etPaddingTB: 15, etPaddingLR: 15, etBackground: "transparent", etBorderSize: 0, etBorderRadius: 2, etBorderColor: "white", etShadow: " 0px 0px 10px 0px #333333", etLastUnit: 4, etNumberFontFamily: "Impact", etNumberSize: 30, etNumberColor: "white", etNumberPaddingTB: 0, etNumberPaddingLR: 8, etNumberBackground: "#ff1a00", etNumberBorderSize: 0, etNumberBorderRadius: 5, etNumberBorderColor: "white", etNumberShadow: "inset 0px 0px 10px 0px rgba(56, 55, 55, 0.22)"
+		                              });
+	                           });
+                        </script>
+                      <div class="eTimer"></div>
+                      <p><a class="blue-button wobble-horizontal" href="#" role="button">КУПИТЬ СЕЙЧАС</a></p>
                       </div>
                     </div>
                   </div>
-                  <p><a class="blue-button wobble-horizontal" href="#" role="button">КУПИТЬ СЕЙЧАС</a></p>
                 </div>
               </div>
             </div>
@@ -218,10 +235,10 @@
       </div>
       <div class="row">
         <div class="col-sm-6 col-md-6" >
-          <iframe width="100%" height="350px" src="https://www.youtube.com/embed/VucIIryfs9k?controls=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <iframe width="100%" height="300px" src="https://www.youtube.com/embed/VucIIryfs9k?controls=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
         <div class="col-sm-6 col-md-6" >
-          <iframe width="100%" height="350px" src="https://www.youtube.com/embed/ZE68SsVvlxc?controls=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <iframe width="100%" height="300px" src="https://www.youtube.com/embed/ZE68SsVvlxc?controls=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
       </div>
     </div>
@@ -258,6 +275,47 @@
       </div>
     </div>
   </div>
+</div><!--==============================Get in touch=============================-->
+
+<div id="contact" class="service-container">
+  <div class="container">
+    <div class="row main-head">
+      <div class="col-md-12">
+        <h1>Закажите звонок уже сейчас</h1>
+        <h2>И получите персональное предложение </h2>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-10 col-md-offset-1" >
+        <div class="contact-form" id="contact-us">
+          <form id="phpcontactform" role="form">
+            <fieldset>
+              <div class="col-xs-12 col-sm-6"  >
+                <div class="form-group">
+                  <input type="text" class="form-control" name="name"  id="name"  placeholder="Ваше имя">
+                </div>
+                <div class="form-group">
+                  <input type="email" class="form-control" name="email" id="email" placeholder="E-mail">
+                </div>
+                <div class="form-group">
+                  <input type="text" class="form-control" name="mobile" id="mobile" placeholder="Телефон">
+                </div>
+              </div>
+              <div class="col-xs-12 col-sm-6" >
+                <div class="form-group">
+                  <textarea class="form-control textarea" rows="5" name="message" id="msg" placeholder="Комментарий"></textarea>
+                </div>
+              </div>
+              <div class="relative fullwidth col-xs-12">
+                <button type="submit" class="form-btn wobble-horizontal">Отправить</button>
+                <span class="loading"></span> </div>
+              <div class="clear"></div>
+            </fieldset>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
 
 <!--==============================Our clients============================-->
@@ -269,7 +327,16 @@
         <h1>ПОЛУЧИТЕ ПЛОЩАДКУ В ПОДАРОК</h1>
         <h2>При покупке до конца февраля </h2>
       </div>
+      <div>
+        <script type="text/javascript">
+	jQuery(document).ready(function() {
+		jQuery(".eTimer").eTimer({
+			etType: 0, etDate: "01.03.2020.0.0", etTitleText: "До конца акции:", etTitleSize: 20, etShowSign: 1, etSep: ":", etFontFamily: "Trebuchet MS", etTextColor: "#a3a3a3", etPaddingTB: 15, etPaddingLR: 15, etBackground: "transparent", etBorderSize: 0, etBorderRadius: 2, etBorderColor: "white", etShadow: " 0px 0px 0px 0px #333333", etLastUnit: 4, etNumberFontFamily: "Impact", etNumberSize: 30, etNumberColor: "white", etNumberPaddingTB: 0, etNumberPaddingLR: 6, etNumberBackground: "#fc1000", etNumberBorderSize: 0, etNumberBorderRadius: 0, etNumberBorderColor: "white", etNumberShadow: "inset 0px 0px 0px 0px rgba(0, 0, 0, 0.5)"
+		});
+	});
+</script>
       <div class="col-md-12">
+    <div class="eTimer" style="margin: 0 auto"></div>
         <p><a class="blue-button wobble-horizontal" href="#" role="button">КУПИТЬ СЕЙЧАС</a></p>
       </div>
     </div>
@@ -398,5 +465,34 @@
 <!--============================Bootstrap==========================-->
 
 <script src="js/bootstrap.min.js" type="text/javascript"></script>
+
+<script>
+// Get the modal
+var modal = document.getElementById("myModal");
+
+// Get the button that opens the modal
+var btn = document.getElementById("myBtn");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks the button, open the modal
+btn.onclick = function() {
+  modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</script>
+
 </body>
 </html>
