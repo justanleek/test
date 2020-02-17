@@ -2,15 +2,16 @@
 $name  = $_REQUEST["name"];
 $email = $_REQUEST["email"];
 $mobile   = $_REQUEST["mobile"];
+$mobile   = $_REQUEST["city"];
 $msg   = $_REQUEST["msg"];
-$to    = "admin@paulthekkinen.com";
+$to    = "justanleek@gmail.com";
 if (isset($email) && isset($name) && isset($msg)) {
-    $subject = "$name sent you a message via FlatHost";
+    $subject = "$name прислал заявку с лендинга по Патриоту";
 		$headers = "MIME-Version: 1.0" . "\r\n";
 $headers .= "Content-type:text/html;charset=iso-8859-1" . "\r\n";
-$headers .= "From: ".$name." <".$email.">\r\n"."Reply-To: ".$email."\r\n" ;
-$msg     = "From: $name<br/> Email: $email <br/> Mobile: $mobile <br/>Message: $msg";
-	
+$headers .= "От ".$name." <".$email.">\r\n"."E-mail: ".$email."\r\n" ;
+$msg     = "От $name<br/> E-mail: $email <br/> Телефон: $mobile <br/> Откуда: $city <br/>Message: $msg";
+
    $mail =  mail($to, $subject, $msg, $headers);
   if($mail)
 	{

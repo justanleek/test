@@ -24,7 +24,7 @@
 
 <!--=================================GOOGLE FONT - OPEN SANS==============================-->
 
-<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,800' rel='stylesheet' type='text/css'>
+<link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
 
 <!--=============================jquery.js==============================-->
 
@@ -34,6 +34,22 @@
 
 <!--============================= login-popup ==============================-->
 
+
+	<!--  Библеотека jquery -->
+	<script type="text/javascript">
+			// Плавный скролл по якорям
+			$('a[href^="#"]').click(function () {
+			    elementClick = $(this).attr("href");
+				destination = $(elementClick).offset().top;
+				if($.browser.safari){
+				$('body').animate( { scrollTop: destination }, 1000 );
+				} else {
+			    	$('html').animate( { scrollTop: destination }, 1000 );
+				}
+				return false;
+		   });
+		});
+	</script>
 
 <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
 <!--[if lt IE 9]><script src="js/ie8-responsive-file-warning.js"></script><![endif]-->
@@ -50,107 +66,61 @@
 
 <body>
 
-<!--==============================Header=============================-->
-
-<header id="home">
-  <div class="top-area">
-    <div class="container">
-      <div class="row">
-        <div class="col-xs-12 col-sm-6 col-md-4">
-          <div class="smo-icon"> <span>Найди нас на</span> <span><a href="#"><img src="https://img.icons8.com/color/21/000000/youtube-play.png"></a></span> <span><a href="#"><img src="https://img.icons8.com/color/21/000000/vk-com.png"></a></span> </div>
+  <div class="phone">
+     <div class="number">
+     <div class="transparentbg"></div>
+      <a href="tel:+78003445555"><h1>8 800 344 55 55</h1></a>
+      <p class='freecall'>Звонок бесплатный</p></div>
+      <a class="callme" href="#contact">Заказать звонок</a>
+  </div>
+    
+<!--=============================Intro==============================-->
+    
+<div class="intro">
+  <div class="intro-container">
+    <div class="intro-logo"><img src="images/logo.png" alt=""></div>
+    <div class="intro-heading">
+        <h1>
+            лебедка для уаз патриот
+        </h1>
+        <h2>
+            от российского производителя
+        </h2>
+    </div>
+    
+    <div class="intro-content">
+        <div class="intro-text">
+            <ul>
+                <li>сертифицировано для ГАИ</li>
+                <li>гарантия 3 года</li>
+                <li>полный установочный комплект в подарок</li>
+            </ul>
+            <h1>43000 &#8381;</h1>
         </div>
-      </div>
+        <div class="intro-image">
+            <img src="images/intro-img.png" alt="">
+        </div>
+        
+    </div>
+    <div class="intro-nav">
+        <div class="nav-item"><a href="#myCarousel">&nbsp;&nbsp;Акция</a></div>
+        <div class="nav-item"><a href="#choose">&nbsp;&nbsp;преимущества</a></div>
+        <div class="nav-item"><a href="#offer">&nbsp;&nbsp;наше производство</a></div>
+        <div class="nav-item"><a href="#services">&nbsp;&nbsp;характеристики</a></div>
+        
     </div>
   </div>
-  <!--==============================Navarea=============================-->
-  <div class="nav-area">
-    <nav id="main-nav" class="navbar navbar-default">
-      <div class="container">
-        <div class="navbar-header">
-          <a class="navbar-brand" href="tel:+78003414455">8 800 3414455</a> </div>
-        <div class="navbar-header-menu">
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button> </div>
-        <div class="navbar-collapse collapse">
-          <ul class="nav navbar-nav">
-            <li class="dropdown active"> <a href="#home" >Главная </a> </li>
-            <li><a href="#choose">Преимущества</a></li>
-            <li><a href="#services">Наше производство</a></li>
-            <li><a href="#offer">Галерея</a></li>
-            <li><a href="#web-hosting">Технические характеристики</a></li>
-          </ul>
-        </div>
-        <!--/.nav-collapse -->
-      </div>
-    </nav>
-  </div>
-</header>
+</div>
+    
 <!--=============================Banner=============================-->
 
 <div id="myCarousel" class="carousel slide" data-ride="carousel">
   <div id="lp-pom-block-10">
     <div class="banner-dot">
-      <ol class="carousel-indicators">
-        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-        <li data-target="#myCarousel" data-slide-to="1"></li>
-        <li data-target="#myCarousel" data-slide-to="2"></li>
-      </ol>
       <div class="baaner-container">
         <div class="carousel-inner">
-          <div class="item">
-            <div class="container">
-              <div class="carousel-caption">
-                <p class="main-image"><img src="images/logo1.png" alt="" /></p>
-                <div class="head-space">
-                  <h1><a href="#">Автомобильная лебедка для УАЗ ПАТРИОТ</a></h1>
-                </div>
-                <h2>от Российского производителя</h2>
-                <p class="banner-text">Автомобильные лебедки Спрут Спорт учтены в конструкции автомобилей УАЗ Патриот и не требуют регистрации в ГИБДД </p>
-                <div class="price1"><h1><a href="#">43 000 &#8381;</a></h1></div>
-                <p><a class="blue-button wobble-horizontal" href="#" role="button">КУПИТЬ</a> </p>
-                <!-- Trigger/Open The Modal -->
-<button id="myBtn">Open Modal</button>
-
-<!-- The Modal -->
-<div id="myModal" class="modal">
-
-  <!-- Modal content -->
-  <div class="modal-content">
-    <span class="close">&times;</span>
-    <p>Some text in the Modal..</p>
-  </div>
-
-</div>
-              </div>
-            </div>
-          </div>
+          
           <div class="item active">
-            <div class="container">
-              <div class="carousel-caption">
-                <div class="banner-inner-container">
-                  <div class="head-space">
-                    <h1><a href="#">Лебедка без регистрации в ГИБДД</a></h1>
-                  </div>
-                  <h2>Устанавливается на конвейере УАЗ</h2>
-                  <p class="banner-text1">Лебедки Спрут сертифицированы для ГАИ и устанавливаются на автомобилях УАЗ прямо на конвейере. </p>
-                  <div class="row featurette">
-                    <div class="col-md-4 banner-icon hidden-xs hidden-sm"> <img src="images/logo1.png" alt="" /> </div>
-                    <div class="col-md-8">
-                      <div class="banner-nav">
-                        <ul>
-                          <li> Сертифицировано для ГИБДД.</li>
-                          <li> Гарантия 3 года.</li>
-                          <li> Полный установочный комплект на автомобиль.</li>
-                        </ul>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="price1"><h1><a href="#">43 000 &#8381;</a></h1></div>
-                  <p><a class="blue-button wobble-horizontal" href="#" role="button">КУПИТЬ</a></p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="item">
             <div class="container">
               <div class="carousel-caption">
                 <div class="banner-inner-container">
@@ -160,7 +130,7 @@
                   <h2> При покупке лебедки Спрут кронштейн крепления в подарок!</h2>
                   <p class="banner-text1">Оставьте заявку на автомобильную лебедку Спрут сейчас и получите кронштейн крепления на автомобиль УАЗ в подарок! </p>
                   <div class="row featurette">
-                    <div class="col-md-4 banner-icon hidden-xs hidden-sm"> <img src="images/logo1.png" alt="" /> </div>
+                    <div class="col-md-4 banner-icon hidden-xs hidden-sm"> <img src="images/logo.png" alt="" /> </div>
                     <div class="col-md-8">
                       <div>
                         <script type="text/javascript">
@@ -171,7 +141,7 @@
 	                           });
                         </script>
                       <div class="eTimer"></div>
-                      <p><a class="blue-button wobble-horizontal" href="#" role="button">КУПИТЬ СЕЙЧАС</a></p>
+                      <p><a class="blue-button wobble-horizontal" href="#contact" role="button">КУПИТЬ СЕЙЧАС</a></p>
                       </div>
                     </div>
                   </div>
@@ -180,10 +150,6 @@
             </div>
           </div>
         </div>
-      </div>
-      <a class="left carousel-control" href="#myCarousel" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a> <a class="right carousel-control" href="#myCarousel" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
-      <div class="banner-arrow">
-        <p class="pulse"><a href="#choose"><img src="images/arrow-bottom.png" alt=""/></a></p>
       </div>
     </div>
   </div>
@@ -233,13 +199,24 @@
           <h2></h2>
         </div>
       </div>
-      <div class="row">
-        <div class="col-sm-6 col-md-6" >
-          <iframe width="100%" height="300px" src="https://www.youtube.com/embed/VucIIryfs9k?controls=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        </div>
-        <div class="col-sm-6 col-md-6" >
-          <iframe width="100%" height="300px" src="https://www.youtube.com/embed/ZE68SsVvlxc?controls=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        </div>
+      <div class="offer--content">
+           <div class="offer-row">
+               <div class="offer--vid">
+                  <iframe width="100%" height="300px" src="https://www.youtube.com/embed/VucIIryfs9k?controls=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+               </div>
+               <div class="offer-text">
+                 <p>Лебедки "Спрут" с питанием от бортовых аккумулятора и генератора предназначены для вытаскивания застрявшего автомобиля и преодоления препятствий. Автомобильные лебедки "Спрут" зарекомендовали себя в качестве надежной и недорогой альтернативы западных аналогов. Любители экстремальной и внедорожной езды, охотники и рыболовы по достоинству оценили существенные преимущества отечественных автомобильных лебедок.</p>
+               </div>
+           </div>
+           <div class="offer-row">
+               <div class="offer--vid">
+                 <iframe width="100%" height="300px" src="https://www.youtube.com/embed/ZE68SsVvlxc?controls=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+               </div>
+               <div class="offer-text">
+                 <p>НОВЫЙ блок управления для автомобильных лебедок Спрут. Стал более компактным ...и более надежным! Герметичен! -- неоднократно доказано испытаниями. И все также Ремонтопригоден!</p>
+                  
+               </div>
+           </div>
       </div>
     </div>
   </div>
@@ -264,10 +241,10 @@
 
       <div class="technical">
                         <ul>
-                          <li> Тяговое усилие, КГс...........4 000</li>
+                          <li> Тяговое усилие 4000 КГс</li>
                           <li> 4-хступенчатый планетарный редуктор</li>
-                          <li> Масса, кг ..............50</li>
-                          <li> Стальной трос, ГОСТ 3067-88</li>
+                          <li> Масса 45 кг</li>
+                          <li> Стальной трос, разрывным усилием более 5 тонн</li>
                           <li> Механический тормоз</li>
                           <li> Герметичность уровня IP68</li>
                         </ul>
@@ -277,11 +254,11 @@
   </div>
 </div><!--==============================Get in touch=============================-->
 
-<div id="contact" class="service-container">
+<div id="contact" class="service-cont">
   <div class="container">
     <div class="row main-head">
       <div class="col-md-12">
-        <h1>Закажите звонок уже сейчас</h1>
+        <h1 style="color:#fff">Закажите звонок уже сейчас</h1>
         <h2>И получите персональное предложение </h2>
       </div>
     </div>
@@ -303,7 +280,10 @@
               </div>
               <div class="col-xs-12 col-sm-6" >
                 <div class="form-group">
-                  <textarea class="form-control textarea" rows="5" name="message" id="msg" placeholder="Комментарий"></textarea>
+                  <input type="text" class="form-control" name="city" id="city" placeholder="Ваш город. Мы не хотим вас разбудить">
+                </div>
+                <div class="form-group">
+                  <textarea class="form-control textarea" rows="3" name="message" id="msg" placeholder="Комментарий"></textarea>
                 </div>
               </div>
               <div class="relative fullwidth col-xs-12">
@@ -337,18 +317,19 @@
 </script>
       <div class="col-md-12">
     <div class="eTimer" style="margin: 0 auto"></div>
-        <p><a class="blue-button wobble-horizontal" href="#" role="button">КУПИТЬ СЕЙЧАС</a></p>
+        <p><a class="blue-button wobble-horizontal" href="#contact" role="button">КУПИТЬ СЕЙЧАС</a></p>
       </div>
     </div>
   </div>
 </div>
+    </div>
 
 <!--==============================Footer============================-->
 <div  class="footer-container">
   <div class="container">
     <div class="row">
       <div class="col-sm-6 col-md-3" >
-        <h3>ООО "СПРУТ"</h3>
+        <h3>Компания "СПРУТ"</h3>
                     <p>432045, Россия, г. Ульяновск, ул. Промышленная 2</p>
                     <p>+7 (8422) 64-92-87 <br /><span>Понедельник-Пятница с 8:00 до 19:00</span></p>
                     <a href="mailto:info@lebedka.net">info@lebedka.net</a>
